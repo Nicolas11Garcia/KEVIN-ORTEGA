@@ -1,0 +1,33 @@
+---
+import MissionVisionItems from "./MissionVisionItems.astro";
+---
+
+<section class="bg-[#ECEEF3] py-[90px]">
+  <div class="max-w-screen-xl mx-auto px-6">
+    <div class="flex justify-center gap-3 items-center mb-8" data-aos="fade-up">
+      <div class="size-3 bg-yellow rounded-full"></div>
+      <p class="uppercase font-semibold">Our priority</p>
+    </div>
+
+    <div class="flex flex-col gap-8 text-center" data-aos="fade-up">
+      <h2 class="text-3xl md:text-5xl font-semibold text-balance">Our Mission Y Vision</h2>
+
+      <p class="text-plomo text-balance">
+        Included with all cards. Switch between modes, depending on the
+        situation. Meet up and share your contact details or switch to Lead
+        Generation mode to receive contact details and send them straight to
+        your CRM.
+      </p>
+    </div>
+
+    <!-- Items -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+      <MissionVisionItems />
+      <MissionVisionItems />
+      <MissionVisionItems />
+      <MissionVisionItems />
+      <MissionVisionItems />
+      <MissionVisionItems />
+    </div>
+  </div>
+</section>

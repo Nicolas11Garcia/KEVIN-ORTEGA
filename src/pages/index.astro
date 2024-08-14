@@ -4,19 +4,38 @@ import Layout from "../layouts/Layout.astro";
 import "@/styles/globals.css";
 
 import Home from "../components/Home.astro";
-import NavBar from "../components/NavBar.astro";
+import Services from "../components/Services.astro";
+import VideoSection from "../components/VideoSection.astro";
+import AboutMe from "../components/AboutMe.astro";
+import OurResponsibility from "../components/OurResponsibility.astro";
+import MissionVision from "../components/MissionVision.astro";
+import Testimony1 from "../components/Testimony1.astro";
+import Testimony2 from "../components/Testimony2.astro";
+import Gallery from "../components/Gallery.astro";
+import FrequentlyAskedQuestions from "../components/FrequentlyAskedQuestions.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Activa Tu Perfil - Venta de seguidores y likes en ig">
+<Layout title="Kevin Ortega x Rancagua Consejero Regional">
   <!--   <NavBar /> -->
   <main class="bg-white">
     <Home />
+    <VideoSection />
+    <Services />
+    <AboutMe />
+    <OurResponsibility />
+    <MissionVision />
+    <Testimony1 />
+    <Testimony2 />
+    <Gallery />
+    <FrequentlyAskedQuestions />
+    <Footer />
   </main>
 </Layout>
 
 <style is:global>
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
   }
   /*=============== SCROLL BAR ===============*/
   ::-webkit-scrollbar {
@@ -26,11 +45,57 @@ import NavBar from "../components/NavBar.astro";
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #1a2128;
+    background-color: #b9b9b9;
     border-radius: 0.5rem;
   }
 
   ::-webkit-scrollbar-thumb:hover {
     background-color: #48515a;
+  }
+
+  body {
+    color: #1a2128;
+  }
+
+  .scroll-downs {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  
+  width: 34px;
+  height: 55px;
+}
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(15px);
+      opacity: 0;
+    }
   }
 </style>

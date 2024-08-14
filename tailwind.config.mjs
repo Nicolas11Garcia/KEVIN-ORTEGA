@@ -15,7 +15,7 @@ export default {
       colors: {
         yellow: "#f2bc39",
         negro: "#1A2128",
-        parrafo: "#434D56"
+        plomo: "#434D56"
       },
     },
   },
