@@ -1,33 +1,68 @@
 ---
 import MissionVisionItems from "./MissionVisionItems.astro";
+
+import SaveMoneyIcon from "./Icons/SaveMoneyIcon.astro";
+import SecurityIcon from "./Icons/SecurityIcon.astro";
+import UserGroupIcon from "./Icons/UserGroupIcon.astro";
 ---
 
 <section class="bg-[#ECEEF3] py-[90px]">
   <div class="max-w-screen-xl mx-auto px-6">
     <div class="flex justify-center gap-3 items-center mb-8" data-aos="fade-up">
       <div class="size-3 bg-yellow rounded-full"></div>
-      <p class="uppercase font-semibold">Our priority</p>
+      <p class="uppercase font-semibold">Nuestra prioridad, te invito</p>
     </div>
 
     <div class="flex flex-col gap-8 text-center" data-aos="fade-up">
-      <h2 class="text-3xl md:text-5xl font-semibold text-balance">Our Mission Y Vision</h2>
+      <h2 class="text-3xl md:text-5xl font-semibold text-balance">Piensa En Rancagua</h2>
 
-      <p class="text-plomo text-balance">
-        Included with all cards. Switch between modes, depending on the
-        situation. Meet up and share your contact details or switch to Lead
-        Generation mode to receive contact details and send them straight to
-        your CRM.
-      </p>
+      <p class="text-plomo text-balance"></p>
     </div>
 
     <!-- Items -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-      <MissionVisionItems />
-      <MissionVisionItems />
-      <MissionVisionItems />
-      <MissionVisionItems />
-      <MissionVisionItems />
-      <MissionVisionItems />
+      <!-- Item 1 -->
+      <div class="p-6 rounded-xl bg-white">
+        <div class="bg-yellow flex max-w-[58px] mx-auto p-3 rounded-xl">
+          <SaveMoneyIcon className="size-8 text-white" />
+        </div>
+        <p class="text-lg text-negro text-center font-bold my-4">
+          Piensa En Rancagua
+        </p>
+        <p class="text-plomo text-center text-balance">
+          Nuestros ejes y prioridades principales se detallan a continuación;
+          sin embargo, esto no limita nuestra capacidad para contribuir en otras
+          áreas clave para el desarrollo de nuestra ciudad.
+        </p>
+      </div>
+      <!-- Item 2 -->
+      <div class="p-6 rounded-xl bg-white">
+        <div class="bg-yellow flex max-w-[58px] mx-auto p-3 rounded-xl">
+          <SecurityIcon className="size-8 text-white" />
+        </div>
+        <p class="text-lg text-negro text-center font-bold my-4">
+          Piensa en Inclusión
+        </p>
+        <p class="text-plomo text-center text-balance">
+          La inclusión en todos sus aspectos es fundamental para construir una
+          sociedad equitativa, garantizando oportunidades justas y respetando la
+          diversidad en cada rincón.
+        </p>
+      </div>
+      <!-- Item 3 -->
+      <div class="p-6 rounded-xl bg-white">
+        <div class="bg-yellow flex max-w-[58px] mx-auto p-3 rounded-xl">
+          <UserGroupIcon className="size-8 text-white" />
+        </div>
+        <p class="text-lg text-negro text-center font-bold my-4">
+          Piensa en Seguridad
+        </p>
+        <p class="text-plomo text-center text-balance">
+          Trabajaremos en mejorar la seguridad recuperando espacios públicos,
+          renovando luminarias y brindando apoyo a las policías para una
+          comunidad más segura y protegida.
+        </p>
+      </div>
     </div>
   </div>
 </section>
