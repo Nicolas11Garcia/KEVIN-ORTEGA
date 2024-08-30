@@ -14,7 +14,7 @@ export const FrequentlyAskedQuestionsC = () => {
       defaultValue="item-1"
     >
       <AccordionItem value="item-1" className=" rounded-xl p-1">
-        <AccordionTrigger className="hover:no-underline text-lg text-negro">
+        <AccordionTrigger className="hover:no-underline text-start text-lg text-negro">
           ¿Qué hace un Core o Consejero Regional?
         </AccordionTrigger>
         <AccordionContent className="text-plomo text-base">
@@ -29,7 +29,7 @@ export const FrequentlyAskedQuestionsC = () => {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2" className=" rounded-xl p-1">
-        <AccordionTrigger className="hover:no-underline text-lg text-negro">
+        <AccordionTrigger className="hover:no-underline text-start text-lg text-negro">
           ¿Cuántos Consejeros Regionales representan Rancagua?
         </AccordionTrigger>
         <AccordionContent className="text-plomo text-base">
@@ -38,7 +38,7 @@ export const FrequentlyAskedQuestionsC = () => {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3" className=" rounded-xl p-1">
-        <AccordionTrigger className="hover:no-underline text-lg text-negro">
+        <AccordionTrigger className="text-start hover:no-underline text-lg text-negro">
           ¿Quién escoge a los Cores o Consejeros Regionales?
         </AccordionTrigger>
         <AccordionContent className="text-plomo text-base">
@@ -47,11 +47,11 @@ export const FrequentlyAskedQuestionsC = () => {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-4" className=" rounded-xl p-1">
-        <AccordionTrigger className="hover:no-underline text-lg text-negro">
+        <AccordionTrigger className="hover:no-underline text-start text-lg text-negro">
           ¿Quiénes son los candidatos a Core o Consejeros Regionales por
           Rancagua?
         </AccordionTrigger>
-        <AccordionContent className="text-plomo text-base">
+        <AccordionContent className="text-plomo  text-base">
           Soy Kevin Ortega, candidato a CORE por Rancagua. Busco representar a
           nuestros vecinos en el Consejo Regional de O’Higgins con
           responsabilidad, siempre enfocado en el bienestar de la ciudad y su
